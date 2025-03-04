@@ -1,0 +1,18 @@
+html
+  head
+    title Pug Form Example
+  body
+    h1 Pug Form Example
+
+    form(action="/update-cobj" method="POST")
+      div
+        label(for="name") Name
+        input(type="text" id="name" name="name" required)
+      div
+        label(for="Model") Model
+        input(type="text" id="model" name="model" required)
+      div
+        label(for="Year") Year
+        input(type="text" id="year" name="year" required)
+      div
+        button(type="submit") Submit
